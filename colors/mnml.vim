@@ -99,3 +99,6 @@ let s:highlights += [
 for hi in s:highlights
   call <SID>highlight_wrapper(hi)
 endfor
+
+" Name the current colorscheme
+let g:colors_name = "mnml"
