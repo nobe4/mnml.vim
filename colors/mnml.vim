@@ -1,3 +1,6 @@
+" Useful function to get the current group
+" :let s = synID(line('.'), col('.'), 1) | echo synIDattr(s, 'name') . ' -> ' . synIDattr(synIDtrans(s), 'name')
+
 " Save the Gruvbox colors for the Gui
 let s:gui_colors = [
 			\ '#353535','#d83925','#a8a521','#e0a82a',
@@ -39,16 +42,16 @@ let s:highlights = [
 			\ ['MatchParen',   'NONE',      'NONE',      4,      0],
 			\ ['ModeMsg',      'NONE',      'NONE',      7,      0],
 			\ ['MoreMsg',      'NONE',      'NONE',      12,     0],
-			\ ['NonText',      'NONE',      'NONE',      7,      0],
+			\ ['NonText',      'NONE',      'NONE',      8,      0],
 			\ ['Normal',       'NONE',      'NONE',      15,     0],
 			\ ['Pmenu',        'NONE',      'NONE',      'NONE', 8],
 			\ ['PmenuSbar',    'NONE',      'NONE',      'NONE', 7],
 			\ ['PmenuSel',     'NONE',      'NONE',      'NONE', 4],
 			\ ['PmenuThumb',   'NONE',      'NONE',      'NONE', 8],
 			\ ['Question',     'NONE',      'NONE',      4,      0],
-			\ ['Search',       'NONE',      'NONE',      0,      12],
+			\ ['Search',       'underline', 'underline', 12,     0],
 			\ ['SignColumn',   'NONE',      'NONE',      7,      0],
-			\ ['SpecialKey',   'NONE',      'NONE',      4,      0],
+			\ ['SpecialKey',   'NONE',      'NONE',      8,      0],
 			\ ['SpellBad',     'underline', 'underline', 1,      0],
 			\ ['SpellCap',     'underline', 'underline', 1,      0],
 			\ ['SpellLocal',   'underline', 'underline', 1,      0],
