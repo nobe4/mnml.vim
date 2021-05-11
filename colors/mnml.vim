@@ -3,10 +3,10 @@
 
 " Save the Gruvbox colors for the Gui
 let s:gui_colors = [
-			\ '#353535','#d83925','#a8a521','#e0a82a',
-			\ '#54969a','#c07998','#7aab7d','#c9bba4',
-			\ '#8f8277','#fe6143','#c4c431','#fcc73c',
-			\ '#94b3a8','#dd9aab','#9ec98e','#efe1bf'
+			\ '#1d1f21', '#cc342b', '#198844', '#fba922',
+			\ '#3971ed', '#a36ac7', '#3971ed', '#c5c8c6',
+			\ '#969896', '#cc342b', '#198844', '#fba922',
+			\ '#3971ed', '#a36ac7', '#3971ed', '#ffffff'
 			\ ]
 
 " Wrapper to ease the highlight creation
