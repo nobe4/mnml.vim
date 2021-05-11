@@ -119,7 +119,10 @@ let s:highlights += [
 			\ ['htmlItalic',              'NONE', 'NONE', 15, 0],
 			\ ['htmlTitle',               'NONE', 'NONE', 15, 0],
 			\ ['htmlUnderline',           'NONE', 'NONE', 15, 0],
-			\ ['htmlUnderlineItalic',     'NONE', 'NONE', 15, 0]
+			\ ['htmlUnderlineItalic',     'NONE', 'NONE', 15, 0],
+			\ ['markdownCode',            'NONE', 'NONE', 7,  0],
+			\ ['markdownCodeBlock',       'NONE', 'NONE', 7,  0],
+			\ ['markdownCodeDelimiter',   'NONE', 'NONE', 7,  0]
 			\ ]
 
 " Setup the colors
