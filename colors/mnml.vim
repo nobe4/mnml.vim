@@ -124,6 +124,7 @@ let s:highlights += [
 			\ ['markdownCode',            'NONE',      7,      0],
 			\ ['markdownCodeBlock',       'NONE',      7,      0],
 			\ ['markdownCodeDelimiter',   'NONE',      7,      0],
+			\ ['markdownHeadingRule',     'NONE',      4,      0],
 			\ ['markdownH1Delimiter',     'NONE',      4,      0],
 			\ ['markdownH2Delimiter',     'NONE',      4,      0],
 			\ ['markdownH3Delimiter',     'NONE',      4,      0],
