@@ -20,12 +20,13 @@ function! s:highlight_wrapper(hi)
 endfunction
 
 " Vim UI
+"        Name,                      Effect,      FG,     BG
 let s:highlights = [
 			\ ['ColorColumn',             'NONE',      'NONE', 9],
 			\ ['Conceal',                 'NONE',      15,     0],
 			\ ['Cursor',                  'NONE',      0,      15],
 			\ ['CursorColumn',            'reverse',   15,     0],
-			\ ['CursorLine',              'reverse',   15,     0],
+			\ ['CursorLine',              'NONE',      15,     0],
 			\ ['CursorLineNr',            'NONE',      'NONE', 0],
 			\ ['DiffAdd',                 'NONE',      2,      0],
 			\ ['DiffAdded',               'NONE',      2,      0],
