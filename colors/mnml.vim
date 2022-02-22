@@ -6,8 +6,11 @@
 "        8 lblack, 9 lred,    10 lgreen, 11 lyellow, 12 lblue,  13 lmagenta, 14 lcyan,  15 lwhite
 let s:gui_colors = [
 			\ '#1d1f21', '#cc342b', '#14B363', '#fba922',  '#3971ed', '#a36ac7',   '#3971ed', '#c5c8c6',
-			\ '#969896', '#cc342b', '#14B363', '#fba922',  '#3971ed', '#a36ac7',   '#3971ed', '#ffffff'
+			\ '#1d1f21', '#cc342b', '#14B363', '#fba922',  '#3971ed', '#a36ac7',   '#3971ed', '#ffffff'
 			\ ]
+
+" TODO: explore highlight groups
+" see hi-link
 
 " Wrapper to ease the highlight creation
 " (will not impact the load time)
@@ -20,62 +23,68 @@ function! s:highlight_wrapper(hi)
 endfunction
 
 " Vim UI
-"        Name,                      Effect,      FG,     BG
+"       Name,                       Effect,      FG,     BG
 let s:highlights = [
 			\ ['ColorColumn',             'NONE',      'NONE', 9],
 			\ ['Conceal',                 'NONE',      15,     0],
 			\ ['Cursor',                  'NONE',      0,      15],
 			\ ['CursorColumn',            'reverse',   15,     0],
-			\ ['CursorLine',              'NONE',      15,     0],
-			\ ['CursorLineNr',            'NONE',      'NONE', 0],
+			\ ['CursorLine',              'bold',      15,     0],
+			\ ['CursorLineNr',            'bold',      15,     0],
+			\ ['Directory',               'NONE',      4,      0],
 			\ ['DiffAdd',                 'NONE',      2,      0],
 			\ ['DiffAdded',               'NONE',      2,      0],
 			\ ['DiffChange',              'NONE',      4,      0],
 			\ ['DiffDelete',              'NONE',      1,      0],
 			\ ['DiffRemoved',             'NONE',      1,      0],
 			\ ['DiffText',                'NONE',      3,      0],
-			\ ['Directory',               'NONE',      4,      0],
-			\ ['EndOfBuffer',             'NONE',      8,      0],
+			\ ['EndOfBuffer',             'NONE',      7,      0],
 			\ ['Error',                   'NONE',      1,      0],
-			\ ['ErrorMsg',                'NONE',      15,     1],
+			\ ['ErrorMsg',                'NONE',      1,      0],
 			\ ['FoldColumn',              'NONE',      7,      0],
-			\ ['Folded',                  'NONE',      8,      0],
-			\ ['IncSearch',               'NONE',      0,      12],
-			\ ['LineNr',                  'NONE',      8,      0],
+			\ ['Folded',                  'NONE',      7,      0],
+			\ ['IncSearch',               'NONE',      4,      0],
+			\ ['LineNr',                  'NONE',      7,      0],
+			\ ['LineNrAbove',             'NONE',      7,      0],
+			\ ['LineNrBelow',             'NONE',      7,      0],
 			\ ['MatchParen',              'NONE',      4,      0],
 			\ ['ModeMsg',                 'NONE',      7,      0],
-			\ ['MoreMsg',                 'NONE',      12,     0],
-			\ ['NonText',                 'NONE',      8,      0],
+			\ ['MoreMsg',                 'NONE',      7,      0],
+			\ ['NonText',                 'NONE',      7,      0],
 			\ ['Normal',                  'NONE',      15,     0],
-			\ ['Pmenu',                   'NONE',      'NONE', 8],
-			\ ['PmenuSbar',               'NONE',      'NONE', 7],
-			\ ['PmenuSel',                'NONE',      'NONE', 4],
-			\ ['PmenuThumb',              'NONE',      'NONE', 8],
+			\ ['Pmenu',                   'NONE',      7,      0],
+			\ ['PmenuSbar',               'NONE',      7,      0],
+			\ ['PmenuSel',                'bold',      15,     0],
+			\ ['PmenuThumb',              'NONE',      0,      15],
 			\ ['Question',                'NONE',      4,      0],
-			\ ['Search',                  'underline', 12,     0],
+			\ ['QuickFixLine',            'NONE',      2,      0],
+			\ ['Search',                  'bold',      12,     0],
 			\ ['SignColumn',              'NONE',      7,      0],
-			\ ['SpecialKey',              'NONE',      8,      0],
+			\ ['SpecialKey',              'NONE',      7,      0],
 			\ ['SpellBad',                'underline', 1,      0],
 			\ ['SpellCap',                'underline', 1,      0],
 			\ ['SpellLocal',              'underline', 1,      0],
 			\ ['SpellRare',               'underline', 1,      0],
-			\ ['StatusLine',              'NONE',      0,      7],
-			\ ['StatusLineNC',            'NONE',      0,      8],
-			\ ['TabLine',                 'NONE',      15,     0],
-			\ ['TabLineFill',             'NONE',      15,     0],
+			\ ['StatusLine',              'NONE',      0,      15],
+			\ ['StatusLineNC',            'NONE',      0,      7],
+			\ ['StatusLineTerm',          'NONE',      0,      15],
+			\ ['StatusLineTermNC',        'NONE',      0,      7],
+			\ ['TabLine',                 'NONE',      7,      0],
+			\ ['TabLineFill',             'NONE',      7,      0],
 			\ ['TabLineSel',              'NONE',      0,      15],
-			\ ['Title',                   'NONE',      4,      0],
-			\ ['VertSplit',               'NONE',      'NONE', 8],
+			\ ['Title',                   'NONE',      0,      15],
+			\ ['VertSplit',               'NONE',      0,      7],
 			\ ['Visual',                  'reverse',   15,     0],
-			\ ['WarningMsg',              'NONE',      'NONE', 1],
-			\ ['WildMenu',                'NONE',      0,      6],
+			\ ['WarningMsg',              'NONE',      3,      0],
+			\ ['WildMenu',                'NONE',      'NONE', 'NONE'],
+			\ ['Menu',                    'NONE',      7,      0],
 			\ ]
 
 " Syntax
 let s:highlights += [
 			\ ['Boolean',                 'NONE',      15,     0],
 			\ ['Character',               'NONE',      15,     0],
-			\ ['Comment',                 'NONE',      8,      0],
+			\ ['Comment',                 'NONE',      7,      0],
 			\ ['Conditional',             'NONE',      15,     0],
 			\ ['Constant',                'NONE',      15,     0],
 			\ ['Debug',                   'NONE',      15,     0],
