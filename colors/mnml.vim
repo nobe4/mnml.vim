@@ -5,8 +5,8 @@
 "        0 black,  1 red,     2 green,   3 yellow,   4 blue,    5 magenta,   6 cyan,    7 white
 "        8 lblack, 9 lred,    10 lgreen, 11 lyellow, 12 lblue,  13 lmagenta, 14 lcyan,  15 lwhite
 let s:gui_colors = [
-			\ '#1d1f21', '#cc342b', '#14B363', '#fba922',  '#3971ed', '#a36ac7',   '#3971ed', '#c5c8c6',
-			\ '#1d1f21', '#cc342b', '#14B363', '#fba922',  '#3971ed', '#a36ac7',   '#3971ed', '#ffffff'
+			\ '#19171c', '#be4678', '#2a9292', '#a06e3b',  '#576ddb', '#955ae7',   '#398bc6', '#e2dfe7',
+			\ '#7e7887', '#be4678', '#2a9292', '#a06e3b',  '#576ddb', '#955ae7',   '#398bc6', '#efecf4'
 			\ ]
 
 " TODO: explore highlight groups
@@ -44,9 +44,9 @@ let s:highlights = [
 			\ ['FoldColumn',              'NONE',      7,      0],
 			\ ['Folded',                  'NONE',      7,      0],
 			\ ['IncSearch',               'NONE',      4,      0],
-			\ ['LineNr',                  'NONE',      7,      0],
-			\ ['LineNrAbove',             'NONE',      7,      0],
-			\ ['LineNrBelow',             'NONE',      7,      0],
+			\ ['LineNr',                  'NONE',      8,      0],
+			\ ['LineNrAbove',             'NONE',      8,      0],
+			\ ['LineNrBelow',             'NONE',      8,      0],
 			\ ['MatchParen',              'NONE',      4,      0],
 			\ ['ModeMsg',                 'NONE',      7,      0],
 			\ ['MoreMsg',                 'NONE',      7,      0],
@@ -59,24 +59,24 @@ let s:highlights = [
 			\ ['Question',                'NONE',      4,      0],
 			\ ['QuickFixLine',            'NONE',      2,      0],
 			\ ['Search',                  'bold',      12,     0],
-			\ ['SignColumn',              'NONE',      7,      0],
-			\ ['SpecialKey',              'NONE',      7,      0],
+			\ ['SignColumn',              'NONE',      8,      0],
+			\ ['SpecialKey',              'NONE',      8,      0],
 			\ ['SpellBad',                'underline', 1,      0],
 			\ ['SpellCap',                'underline', 1,      0],
 			\ ['SpellLocal',              'underline', 1,      0],
 			\ ['SpellRare',               'underline', 1,      0],
-			\ ['StatusLine',              'NONE',      0,      15],
-			\ ['StatusLineNC',            'NONE',      0,      7],
-			\ ['StatusLineTerm',          'NONE',      0,      15],
-			\ ['StatusLineTermNC',        'NONE',      0,      7],
-			\ ['TabLine',                 'NONE',      7,      0],
-			\ ['TabLineFill',             'NONE',      7,      0],
-			\ ['TabLineSel',              'NONE',      0,      15],
-			\ ['Title',                   'NONE',      0,      15],
+			\ ['StatusLine',              'NONE',      0,      7],
+			\ ['StatusLineNC',            'NONE',      0,      8],
+			\ ['StatusLineTerm',          'NONE',      0,      7],
+			\ ['StatusLineTermNC',        'NONE',      0,      8],
+			\ ['TabLine',                 'NONE',      8,      0],
+			\ ['TabLineFill',             'NONE',      8,      0],
+			\ ['TabLineSel',              'NONE',      0,      7],
+			\ ['Title',                   'NONE',      0,      7],
 			\ ['VertSplit',               'NONE',      0,      7],
 			\ ['Visual',                  'reverse',   15,     0],
 			\ ['WarningMsg',              'NONE',      3,      0],
-			\ ['WildMenu',                'NONE',      'NONE', 'NONE'],
+			\ ['WildMenu',                'NONE',      7,      0],
 			\ ['Menu',                    'NONE',      7,      0],
 			\ ]
 
@@ -84,7 +84,7 @@ let s:highlights = [
 let s:highlights += [
 			\ ['Boolean',                 'NONE',      15,     0],
 			\ ['Character',               'NONE',      15,     0],
-			\ ['Comment',                 'NONE',      7,      0],
+			\ ['Comment',                 'NONE',      8,      0],
 			\ ['Conditional',             'NONE',      15,     0],
 			\ ['Constant',                'NONE',      15,     0],
 			\ ['Debug',                   'NONE',      15,     0],
