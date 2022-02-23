@@ -5,8 +5,8 @@
 "        0 black,  1 red,     2 green,   3 yellow,   4 blue,    5 magenta,   6 cyan,    7 white
 "        8 lblack, 9 lred,    10 lgreen, 11 lyellow, 12 lblue,  13 lmagenta, 14 lcyan,  15 lwhite
 let s:gui_colors = [
-			\ '#19171c', '#be4678', '#2a9292', '#a06e3b',  '#576ddb', '#955ae7',   '#398bc6', '#e2dfe7',
-			\ '#7e7887', '#be4678', '#2a9292', '#a06e3b',  '#576ddb', '#955ae7',   '#398bc6', '#efecf4'
+			\ '#1d1f21', '#cc342b', '#14b363', '#fba922',  '#3971ed', '#cc342b',   '#3971ed', '#c5c8c6',
+			\ '#878988', '#cc342b', '#14b363', '#fba922',  '#3971ed', '#cc342b',   '#3971ed', '#ffffff'
 			\ ]
 
 " TODO: explore highlight groups
@@ -43,7 +43,6 @@ let s:highlights = [
 			\ ['ErrorMsg',                'NONE',      1,      0],
 			\ ['FoldColumn',              'NONE',      7,      0],
 			\ ['Folded',                  'NONE',      7,      0],
-			\ ['IncSearch',               'NONE',      4,      0],
 			\ ['LineNr',                  'NONE',      8,      0],
 			\ ['LineNrAbove',             'NONE',      8,      0],
 			\ ['LineNrBelow',             'NONE',      8,      0],
@@ -58,7 +57,8 @@ let s:highlights = [
 			\ ['PmenuThumb',              'NONE',      0,      15],
 			\ ['Question',                'NONE',      4,      0],
 			\ ['QuickFixLine',            'NONE',      2,      0],
-			\ ['Search',                  'bold',      12,     0],
+			\ ['Search',                  'NONE',      2,     0],
+			\ ['IncSearch',               'NONE',      4,      0],
 			\ ['SignColumn',              'NONE',      8,      0],
 			\ ['SpecialKey',              'NONE',      8,      0],
 			\ ['SpellBad',                'underline', 1,      0],
@@ -96,7 +96,7 @@ let s:highlights += [
 			\ ['Format',                  'NONE',      15,     0],
 			\ ['Function',                'NONE',      15,     0],
 			\ ['Identifier',              'NONE',      15,     0],
-			\ ['Ignore',                  'NONE',      9,      0],
+			\ ['Ignore',                  'NONE',      1,      0],
 			\ ['Include',                 'NONE',      15,     0],
 			\ ['Keyword',                 'NONE',      15,     0],
 			\ ['Label',                   'NONE',      15,     0],
@@ -114,7 +114,7 @@ let s:highlights += [
 			\ ['String',                  'NONE',      15,     0],
 			\ ['Structure',               'NONE',      15,     0],
 			\ ['Tag',                     'NONE',      15,     0],
-			\ ['Todo',                    'NONE',      2,      0],
+			\ ['Todo',                    'NONE',      3,      0],
 			\ ['Type',                    'NONE',      15,     0],
 			\ ['Typedef',                 'NONE',      15,     0],
 			\ ['Underlined',              'NONE',      15,     0],
